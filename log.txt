@@ -1,0 +1,36 @@
+[INFO] El sistema ha iniciado correctamente.
+[DEBUG] Variable x tiene un valor inesperado.
+[WARNING] Espacio en disco al 80%.
+[ERROR] No se pudo abrir el archivo de configuración.
+[CRITICAL] Fallo crítico: pérdida de datos detectada.
+[ERROR] Error al leer el archivo en archivo: config.txt, línea: 42
+[SECURITY] Usuario: admin, Acción: Access Granted
+[SECURITY] Usuario: unknown_user, Acción: Access Denied
+[ERROR] Fallo inesperado durante la ejecución. en archivo: ejercicio2b.cpp, línea: 65
+[INFO] El sistema ha iniciado correctamente.
+[DEBUG] Variable x tiene un valor inesperado.
+[WARNING] Espacio en disco al 80%.
+[ERROR] No se pudo abrir el archivo de configuración.
+[CRITICAL] Fallo crítico: pérdida de datos detectada.
+[ERROR] Error al leer el archivo en archivo: config.txt, línea: 42
+[SECURITY] Usuario: admin, Acción: Access Granted
+[SECURITY] Usuario: unknown_user, Acción: Access Denied
+[ERROR] Fallo inesperado durante la ejecución. en archivo: ejercicio2a.cpp, línea: 70
+[INFO] El sistema ha iniciado correctamente.
+[DEBUG] Variable x tiene un valor inesperado.
+[WARNING] Espacio en disco al 80%.
+[ERROR] No se pudo abrir el archivo de configuración.
+[CRITICAL] Fallo crítico: pérdida de datos detectada.
+[ERROR] Error al leer el archivo en archivo: config.txt, línea: 42
+[SECURITY] Usuario: admin, Acción: Access Granted
+[SECURITY] Usuario: unknown_user, Acción: Access Denied
+[ERROR] Fallo inesperado durante la ejecución. en archivo: ejercicio2a.cpp, línea: 67
+[INFO] El sistema ha iniciado correctamente.
+[DEBUG] Variable x tiene un valor inesperado.
+[WARNING] Espacio en disco al 80%.
+[ERROR] No se pudo abrir el archivo de configuración.
+[CRITICAL] Fallo crítico: pérdida de datos detectada.
+[ERROR] Error al leer el archivo en archivo: config.txt, línea: 42
+[SECURITY] Usuario: admin, Acción: Access Granted
+[SECURITY] Usuario: unknown_user, Acción: Access Denied
+[ERROR] Fallo inesperado durante la ejecución. en archivo: ejercicio2a.cpp, línea: 70
