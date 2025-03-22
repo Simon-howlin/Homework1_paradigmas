@@ -45,9 +45,9 @@ void imprimirMatrizInversa(int** matriz, int n) {
 // Función que libera la memoria dinámica reservada para la matriz
 void liberarMatriz(int** matriz, int n) {
     for (int i = 0; i < n; ++i) {
-        delete[] matriz[i]; // Libera cada fil
+        delete[] matriz[i];
     }
-    delete[] matriz; // Libera arreglo de punteros 
+    delete[] matriz; 
 }
 
 int main() {
@@ -57,10 +57,10 @@ int main() {
 
     if (n > 1) {
         int** matriz = crearMatriz(n);   
-        cargarMatriz(matriz, n);  // Carga la matriz con valores secuenciales
-        imprimirMatriz(matriz, n);  // Imprime la matriz de forma normal
-        imprimirMatrizInversa(matriz, n); // Imprime la matriz en orden inverso
-        liberarMatriz(matriz, n);  // Liberamos la memoria ocupada
+        cargarMatriz(matriz, n); 
+        imprimirMatriz(matriz, n); 
+        imprimirMatrizInversa(matriz, n); 
+        liberarMatriz(matriz, n);
     } else {
         cout << "El valor de n debe ser mayor que 1." << endl;
     }

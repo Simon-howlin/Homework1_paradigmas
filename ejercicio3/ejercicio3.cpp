@@ -13,6 +13,7 @@ struct list{
     size_t size;
 };
 
+// crea un nuevo nodo
 shared_ptr<Node> create_node(int value){
     shared_ptr<Node> node = make_shared<Node>();
     node->data = value;
@@ -21,6 +22,7 @@ shared_ptr<Node> create_node(int value){
     return node;
 }
 
+// inserta un nuevo nodo al principio de la lista
 void push_front(shared_ptr<list>& list, int value){
     shared_ptr<Node> new_node = create_node(value);
     new_node->next = list->head;
@@ -28,6 +30,7 @@ void push_front(shared_ptr<list>& list, int value){
     list->size ++;
 }
 
+// inserta un nuevo nodo al final de la lista
 void push_back(shared_ptr<list>& list, int value){
     if (!(list->size)) push_front(list, value);
 
@@ -41,13 +44,15 @@ void push_back(shared_ptr<list>& list, int value){
     list->size ++;
 }
 
+// inserta un nuevo nodo en la posicion deseada
 void insert(shared_ptr<list>& list, int value, int pos){
+    // si se decea insertar fuera de rango inserta al final de la lista
     if (pos > list->size){
         cout << "La posicion " << pos << " esta fuera de rango"<<endl;
         push_back(list, value);
     }else{
         shared_ptr<Node> curr = list->head;
-        for (int i = 0; i < pos-2; i++){
+        for (int i = 0; i < pos-2; i++){ 
             curr = curr->next;
         }
 
@@ -58,12 +63,14 @@ void insert(shared_ptr<list>& list, int value, int pos){
     }
 }
 
+// elimina el nodo de la posicion deseada
 void erase(shared_ptr<list>& list, int pos){
+    // si se decea insertar fuera de rango inserta al final de la lista
     if (pos > list->size){
         cout << "La posicion " << pos << " esta fuera de rango"<<endl;
 
         shared_ptr<Node> curr = list->head;
-        while (curr->next->next){
+        while (curr->next->next){ // frena en el anterior al que se desea eliminar para reacomodar
             curr = curr->next;
         }
 
@@ -71,6 +78,7 @@ void erase(shared_ptr<list>& list, int pos){
         curr->next = nullptr;
         list->size --;
     }
+    // caso base: que pos sea = 1
     else if (pos == 1){
         shared_ptr<Node> curr = list->head;
         list->head = curr->next;
@@ -92,6 +100,7 @@ void erase(shared_ptr<list>& list, int pos){
     }
 }
 
+// imprime la lista en secuencialmente desde {lista[0],..., lista[n]}
 void print_list(shared_ptr<list>& list){
     shared_ptr<Node> curr = list->head;
     while (curr) {

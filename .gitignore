@@ -1,0 +1,11 @@
+# Logs y archivos de salida
+log.txt
+*.out
+*.exe
+
+# Ejecutables locales
+ej1
+ej2
+ej3
+ej4a
+ej4c
