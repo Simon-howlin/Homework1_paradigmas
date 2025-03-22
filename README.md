@@ -1,6 +1,6 @@
 # Home work 1
 
-## ¿De que tratan los ejercicios?:
+## ¿De que tratan los ejercicios?
 
 - ejercicio 1: manejo de matrices, en especial no hago nada raro mas que asignar memoria a mano en vez de usar vector de vectores.
 
@@ -17,5 +17,5 @@
 - Del ejercicio 1 al 3 se puede compilar de manera normal por terminal -> g++ ejercicioN/ejercicioN.cpp -o bin/ejN (siendo n el numero de ej).
 - El ejercicio 4 se tiene que correr con otro comando por el tema de verciones de c++ que no es compatible con constexpr -> g++ -std=c++17 ejercicioN/ejercicioN.cpp -o bin/ejN (siendo n el numero de ej).
 
-## Como ejecutar los ejercicios:
+## Como ejecutarlos:
 - ./bin/ejN (siendo n el numero de ej).
